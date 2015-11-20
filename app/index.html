@@ -34,20 +34,60 @@
       <link rel="stylesheet" href="styles/main.css">
     </noscript>
 
+    <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
+
     <!-- Styles for First Render -->
     <style>
-      html, body {
+      * {
+        box-sizing: border-box;
+      }
+      html {
         margin: 0;
         padding: 0;
       }
+      body {
+        max-width: 720px;
+        width: 100%;
+        margin: 0 auto;
+        padding: 20px;
+        background-color: #4A148C;
+        color: white;
+        font-family: 'Raleway', sans-serif;
+      }
       .tabs {
+        margin: 0;
+        padding: 0;
         list-style: none;
+        display: flex;
+        justify-content: space-around;
+        background-color: rgba(255, 255, 255, 0.12);
       }
       .tabs li {
-        display: inline-block;
+        display: block;
+        font-size: 28px;
+        padding: 10px;
+      }
+      a {
+        text-decoration: none;
+        color: inherit;
       }
       section {
         display: none;
+      }
+      button {
+        width: 100%;
+        border: 0;
+        color: white;
+        font-size: 28px;
+        background-color: rgba(255, 255, 255, 0.12);
+        padding: 20px;
+      }
+      #output {
+        margin-bottom: 20px;
+      }
+      footer {
+        margin-top: 20px;
+        opacity: 0.54;
       }
     </style>
 
@@ -64,7 +104,7 @@
   <body>
     <ul class="tabs">
       <li>
-        <a href="#content">File Content</a>
+        <a href="#content">Content</a>
       </li>
       <li>
         <a href="#file">File</a>
@@ -83,8 +123,10 @@
       <input type="text" placeholder="URL">
     </section>
     <div id="output">
-      
     </div>
     <button>Validate</button>
+    <footer>
+      manifestvalidator {{_!_version_!_}} by Surma. <a href="https://twitter.com/surmair">Twitter</a>, <a href="https://github.com/surma/manifestvalidator">Source</a>
+    </footer>
   </body>
 </html>

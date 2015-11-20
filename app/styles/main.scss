@@ -1,6 +1,40 @@
+section {
+  margin: 20px 0;
+}
 section:target {
   display: block;
 }
+section > * {
+  width: 100%;
+  font-size: 20px;
+}
 textarea {
   font-family: monospace;
+  min-height: 30vh;
+}
+.tabs li {
+  background-color: rgba(255, 255, 255, 0);
+  transition: background-color 0.5s;
+}
+.tabs li:hover {
+  background-color: rgba(255, 255, 255, 0.12);
+}
+button {
+  transition: background-color 0.5s;
+}
+button:hover {
+  background-color: rgba(255, 255, 255, 0.24);
+}
+#output div {
+  font-family: monospace;
+  padding: 10px;
+  margin: 10px 0;
+}
+#output .error {
+  background-color: #D32F2F;
+  border: 2px solid #FF1744;
+}
+#output .success {
+  background-color: #388E3C;
+  border: 2px solid #00E676;
 }
